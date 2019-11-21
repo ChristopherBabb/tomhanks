@@ -58,6 +58,7 @@ for (var i = 0; i < movieList.length; i++)
                 //creat img element
                 let image = document.createElement('img');
                 image.setAttribute('src', movie.Poster);
+                image.setAttribute('alt', 'tom hanks')
 
 
                 //Create an h1, h2, h3 and set the text content to the film's title, rating and age
