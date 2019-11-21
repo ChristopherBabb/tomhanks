@@ -1,0 +1,68 @@
+html{
+    margin: auto;
+    background-color: black;
+}
+
+
+#root{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size:3rem;
+}
+
+
+img{
+    border-radius: 5px;
+}
+
+
+p{
+    color: white;
+    max-width: 200px;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.newMovie{
+    color: white;
+    max-height: 1000px;
+    border-radius: 25px;
+    max-width: 400px;
+
+}
+
+
+@media screen and (min-width: 45em) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+    }
+
+    body li:nth-child (3) {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 55em) {
+    body {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 2px;
+    }
+
+    body li:nth-child (3) {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+}
